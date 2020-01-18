@@ -5,7 +5,7 @@ const handleMediaChange = Symbol('handleMediaChange');
 const capture = Symbol('capture');
 const restore = Symbol('restore');
 const elements = Symbol('elements');
-const match = Symbol('elements');
+const match = Symbol('match');
 
 class MQPortal extends HTMLElement {
     constructor(...args) {
