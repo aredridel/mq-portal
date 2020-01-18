@@ -1,6 +1,6 @@
 {
   "name": "@aredridel/mq-portal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom element to re-arrange content based on media query",
   "main": "index.js",
   "author": "Aria Stewart <aredridel@dinhe.net>",
