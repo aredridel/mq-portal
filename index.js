@@ -54,7 +54,6 @@ class MQPortal extends HTMLElement {
     }
 
     [capture]() {
-        console.warn('capture');
         if (this.children.length > 0) this[restore]();
         const frag = document.createDocumentFragment();
         for (const el of document.querySelectorAll(this[match])) {
@@ -65,7 +64,6 @@ class MQPortal extends HTMLElement {
     }
 
     [restore]() {
-        console.warn('restore');
         for (const el of Array.from(this.children).reverse()) {
             const ref = this[elements].get(el);
             if (!ref) {
@@ -77,7 +75,6 @@ class MQPortal extends HTMLElement {
     }
 
     [handleMediaChange]() {
-        console.warn('media change');
         if (this[query] && this[query].matches && this[match]) {
             this[capture]();
         } else {
